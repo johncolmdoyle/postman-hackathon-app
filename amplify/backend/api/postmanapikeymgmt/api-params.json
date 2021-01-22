@@ -1,0 +1,42 @@
+{
+    "paths": [
+        {
+            "name": "/keys",
+            "lambdaFunction": "postmanhackathone4bbc660",
+            "privacy": {
+                "private": true,
+                "auth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH",
+                    "/DELETE"
+                ]
+            },
+            "policyResourceName": "/keys"
+        }
+    ],
+    "resourceName": "postmanapikeymgmt",
+    "apiName": "postmanapikeymgmt",
+    "functionArns": [
+        {
+            "lambdaFunction": "postmanhackathone4bbc660"
+        }
+    ],
+    "privacy": {
+        "auth": 1,
+        "unauth": 0,
+        "authRoleName": "amplify-postmanhackathon-prod-225348-authRole",
+        "unAuthRoleName": "amplify-postmanhackathon-prod-225348-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "postmanhackathone4bbc660",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

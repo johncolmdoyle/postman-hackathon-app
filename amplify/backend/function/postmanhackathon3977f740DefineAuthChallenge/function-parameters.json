@@ -1,0 +1,16 @@
+{
+  "trigger": true,
+  "modules": [
+    "captcha-define-challenge"
+  ],
+  "parentResource": "postmanhackathon3977f740",
+  "functionName": "postmanhackathon3977f740DefineAuthChallenge",
+  "resourceName": "postmanhackathon3977f740DefineAuthChallenge",
+  "parentStack": "auth",
+  "triggerEnvs": [],
+  "triggerDir": "/Users/johndoyle/.nvm/versions/node/v10.15.1/lib/node_modules/@aws-amplify/cli/node_modules/amplify-category-auth/provider-utils/awscloudformation/triggers/DefineAuthChallenge",
+  "triggerTemplate": "DefineAuthChallenge.json.ejs",
+  "roleName": "postmanhackathon3977f740DefineAuthChallenge",
+  "skipEdit": true,
+  "enableCors": false
+}

@@ -12,8 +12,11 @@
       "AmplifyAppId": "d2dol9d6u3yvc6"
     },
     "categories": {
+      "function": {
+        "postmanhackathon3977f740DefineAuthChallenge": {}
+      },
       "auth": {
-        "postmanhackathonfc7f4c35": {}
+        "postmanhackathonc91cbe59": {}
       }
     }
   }

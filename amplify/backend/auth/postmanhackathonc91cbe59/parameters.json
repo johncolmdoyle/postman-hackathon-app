@@ -1,8 +1,8 @@
 {
-    "identityPoolName": "postmanhackathonfc7f4c35_identitypool_fc7f4c35",
+    "identityPoolName": "postmanhackathonc91cbe59_identitypool_c91cbe59",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "postmafc7f4c35",
-    "userPoolName": "postmanhackathonfc7f4c35_userpool_fc7f4c35",
+    "resourceNameTruncated": "postmac91cbe59",
+    "userPoolName": "postmanhackathonc91cbe59_userpool_c91cbe59",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -28,10 +28,10 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "postmafc7f4c35_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "postmac91cbe59_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "fc7f4c35",
-    "resourceName": "postmanhackathonfc7f4c35",
+    "sharedId": "c91cbe59",
+    "resourceName": "postmanhackathonc91cbe59",
     "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {
         "Fn::GetAtt": [
@@ -49,8 +49,13 @@
     "usernameAttributes": [
         "email"
     ],
+    "triggers": "{}",
     "userPoolGroupList": [],
     "serviceName": "Cognito",
     "usernameCaseSensitive": false,
+    "parentStack": {
+        "Ref": "AWS::StackId"
+    },
+    "permissions": [],
     "dependsOn": []
 }

@@ -28,6 +28,35 @@
   color: #61dafb;
 }
 
+.titleText {
+  float: left;
+}
+
+.signoutButton {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.apiTable {  
+  margin: 0 auto;
+}
+
+.apiTable td, th {
+  height: 2rem;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.apiTable thead tr th {
+  background: #FF9900;
+  border-color: white;
+  padding: 1rem;
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
