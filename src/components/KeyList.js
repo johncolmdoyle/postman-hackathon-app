@@ -31,14 +31,14 @@ const KeyList = (props) => {
          .get(awsconfig.aws_cloud_logic_custom[0].name, "/keys", {})
          .then(response => {
            props.setKeyState({ loadingKeys: false, keys: response.data });
-           this.forceUpdate();
+           window.location.reload();
          })
         .catch(error => {
-           console.log(error.response);
+           window.location.reload();
           });
       })
       .catch(error => {
-        console.log(error.response);
+        window.location.reload();
       });
   }
 
