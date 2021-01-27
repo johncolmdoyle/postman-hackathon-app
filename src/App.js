@@ -18,7 +18,7 @@ API.configure(awsconfig);
 
 function AmplifySetup() {
   return (
-    <AmplifyAuthenticator>
+    <AmplifyAuthenticator >
       <AmplifyForgotPassword
         headerText="Reset Password"
         slot="forgot-password"
@@ -71,6 +71,8 @@ function App() {
     keys: null
   });
 
+  let previousAuthState = useState();
+
   const [authState, setAuthState] = useState();
   const [user, setUser] = useState();
 
@@ -78,8 +80,16 @@ function App() {
     setKeyState({ loadingKeys: true});
 
     onAuthUIStateChange((nextAuthState, authData) => {
+      if (nextAuthState === "confirmSignUp") {
+        previousAuthState = nextAuthState;
+      }
+      if (previousAuthState === "confirmSignUp" && nextAuthState === "signedin") {
+        previousAuthState = ""
+        window.location.reload();
+      }
+
       setAuthState(nextAuthState);
-      setUser(authData)
+      setUser(authData);
     });
 
     API
